@@ -26,62 +26,196 @@ public class Interfas1 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+<<<<<<< HEAD
         jLabel1 = new javax.swing.JLabel();
 
         jLabel1.setText("jLabel1");
+=======
+        btgServicio = new javax.swing.ButtonGroup();
+        btgTurno = new javax.swing.ButtonGroup();
+        lblRPE = new javax.swing.JLabel();
+        lblNombre = new javax.swing.JLabel();
+        txtNobre = new javax.swing.JTextField();
+        cbxCategorias = new javax.swing.JComboBox<>();
+        lblCategorias = new javax.swing.JLabel();
+        ckbAlmuerzo = new javax.swing.JCheckBox();
+        ckbTransporte = new javax.swing.JCheckBox();
+        ckbMaterial = new javax.swing.JCheckBox();
+        rbtMañana = new javax.swing.JRadioButton();
+        rbtTarde = new javax.swing.JRadioButton();
+        btnRegistroP = new javax.swing.JButton();
+        btnMostrarR = new javax.swing.JButton();
+>>>>>>> 0f6f4c8ef0454988d349d96594f6a9485112a0b7
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        lblRPE.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
+        lblRPE.setText("Sistema de Registro de Participantes para un Evento");
+
+        lblNombre.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        lblNombre.setText("Nombre");
+
+        txtNobre.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNobreActionPerformed(evt);
+            }
+        });
+
+        cbxCategorias.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        cbxCategorias.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Estudiante", "Profesional", "Invitado", "Especial" }));
+        cbxCategorias.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cbxCategoriasActionPerformed(evt);
+            }
+        });
+
+        lblCategorias.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        lblCategorias.setText("Categorias");
+
+        btgServicio.add(ckbAlmuerzo);
+        ckbAlmuerzo.setText("ALMUERZO");
+
+        btgServicio.add(ckbTransporte);
+        ckbTransporte.setText("TRANSPORTE");
+        ckbTransporte.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ckbTransporteActionPerformed(evt);
+            }
+        });
+
+        btgServicio.add(ckbMaterial);
+        ckbMaterial.setText("MATERIAL");
+        ckbMaterial.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ckbMaterialActionPerformed(evt);
+            }
+        });
+
+        btgTurno.add(rbtMañana);
+        rbtMañana.setText("MAÑANA");
+
+        btgTurno.add(rbtTarde);
+        rbtTarde.setText("TARDE");
+
+        btnRegistroP.setText("Registrar Participante");
+        btnRegistroP.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRegistroPActionPerformed(evt);
+            }
+        });
+
+        btnMostrarR.setText("Mostrar Registro");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(84, 84, 84)
+                        .addComponent(lblNombre)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtNobre, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(116, 116, 116)
+                        .addComponent(lblCategorias)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(cbxCategorias, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(154, 154, 154)
+                        .addComponent(lblRPE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(172, 172, 172)
+                        .addComponent(rbtMañana)
+                        .addGap(66, 66, 66)
+                        .addComponent(rbtTarde))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(80, 80, 80)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(ckbAlmuerzo)
+                            .addComponent(btnRegistroP))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnMostrarR)
+                .addGap(124, 124, 124))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(ckbTransporte)
+                .addGap(69, 69, 69)
+                .addComponent(ckbMaterial)
+                .addGap(138, 138, 138))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblRPE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblNombre)
+                    .addComponent(txtNobre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cbxCategorias, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblCategorias))
+                .addGap(32, 32, 32)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ckbAlmuerzo)
+                    .addComponent(ckbTransporte)
+                    .addComponent(ckbMaterial))
+                .addGap(26, 26, 26)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(rbtMañana)
+                    .addComponent(rbtTarde))
+                .addGap(49, 49, 49)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnRegistroP)
+                    .addComponent(btnMostrarR))
+                .addContainerGap(78, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Interfas1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Interfas1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Interfas1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Interfas1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
+    private void txtNobreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNobreActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNobreActionPerformed
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Interfas1().setVisible(true);
-            }
-        });
-    }
+    private void cbxCategoriasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbxCategoriasActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cbxCategoriasActionPerformed
+
+    private void ckbTransporteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ckbTransporteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ckbTransporteActionPerformed
+
+    private void ckbMaterialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ckbMaterialActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ckbMaterialActionPerformed
+
+    private void btnRegistroPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistroPActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRegistroPActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+<<<<<<< HEAD
     private javax.swing.JLabel jLabel1;
+=======
+    private javax.swing.ButtonGroup btgServicio;
+    private javax.swing.ButtonGroup btgTurno;
+    private javax.swing.JButton btnMostrarR;
+    private javax.swing.JButton btnRegistroP;
+    private javax.swing.JComboBox<String> cbxCategorias;
+    private javax.swing.JCheckBox ckbAlmuerzo;
+    private javax.swing.JCheckBox ckbMaterial;
+    private javax.swing.JCheckBox ckbTransporte;
+    private javax.swing.JLabel lblCategorias;
+    private javax.swing.JLabel lblNombre;
+    private javax.swing.JLabel lblRPE;
+    private javax.swing.JRadioButton rbtMañana;
+    private javax.swing.JRadioButton rbtTarde;
+    private javax.swing.JTextField txtNobre;
+>>>>>>> 0f6f4c8ef0454988d349d96594f6a9485112a0b7
     // End of variables declaration//GEN-END:variables
 }
