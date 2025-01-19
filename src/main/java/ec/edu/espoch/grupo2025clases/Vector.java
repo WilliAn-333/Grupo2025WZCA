@@ -38,6 +38,10 @@ public class Vector {
         }
     }
    
+   //Ver datos
    
+   public String verDatos(int i){
+       return vector[i];
+   }
     
 }
