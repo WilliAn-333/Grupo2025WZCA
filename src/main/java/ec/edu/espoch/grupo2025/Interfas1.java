@@ -26,26 +26,182 @@ public class Interfas1 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+<<<<<<< HEAD
         jLabel1 = new javax.swing.JLabel();
 
         jLabel1.setText("jLabel1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+=======
+        btgServicio = new javax.swing.ButtonGroup();
+        btgTurno = new javax.swing.ButtonGroup();
+        lblRPE = new javax.swing.JLabel();
+        lblNombre = new javax.swing.JLabel();
+        txtNobre = new javax.swing.JTextField();
+        cbxCategorias = new javax.swing.JComboBox<>();
+        lblCategorias = new javax.swing.JLabel();
+        ckbAlmuerzo = new javax.swing.JCheckBox();
+        ckbTransporte = new javax.swing.JCheckBox();
+        ckbMaterial = new javax.swing.JCheckBox();
+        rbtMañana = new javax.swing.JRadioButton();
+        rbtTarde = new javax.swing.JRadioButton();
+        btnRegistroP = new javax.swing.JButton();
+        btnMostrarR = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        txtArea = new javax.swing.JTextArea();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        lblRPE.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
+        lblRPE.setText("Sistema de Registro de Participantes para un Evento");
+
+        lblNombre.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        lblNombre.setText("Nombre");
+
+        txtNobre.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNobreActionPerformed(evt);
+            }
+        });
+
+        cbxCategorias.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        cbxCategorias.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Estudiante", "Profesional", "Invitado", "Especial" }));
+        cbxCategorias.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cbxCategoriasActionPerformed(evt);
+            }
+        });
+
+        lblCategorias.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        lblCategorias.setText("Categorias");
+
+        btgServicio.add(ckbAlmuerzo);
+        ckbAlmuerzo.setText("ALMUERZO");
+
+        btgServicio.add(ckbTransporte);
+        ckbTransporte.setText("TRANSPORTE");
+        ckbTransporte.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ckbTransporteActionPerformed(evt);
+            }
+        });
+
+        btgServicio.add(ckbMaterial);
+        ckbMaterial.setText("MATERIAL");
+        ckbMaterial.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ckbMaterialActionPerformed(evt);
+            }
+        });
+
+        btgTurno.add(rbtMañana);
+        rbtMañana.setText("MAÑANA");
+
+        btgTurno.add(rbtTarde);
+        rbtTarde.setText("TARDE");
+
+        btnRegistroP.setText("Registrar Participante");
+        btnRegistroP.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRegistroPActionPerformed(evt);
+            }
+        });
+
+        btnMostrarR.setText("Mostrar Registro");
+
+        txtArea.setColumns(20);
+        txtArea.setRows(5);
+        jScrollPane1.setViewportView(txtArea);
+
+>>>>>>> d6bcee0bb18186b9276dc98a19ebed7f1f230c59
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
             .addGap(0, 400, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 300, Short.MAX_VALUE)
+=======
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(127, 127, 127)
+                        .addComponent(lblRPE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(lblNombre)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(txtNobre, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(46, 46, 46)
+                                        .addComponent(lblCategorias))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(rbtMañana)
+                                            .addComponent(ckbAlmuerzo))
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addGap(18, 18, 18)
+                                                .addComponent(ckbTransporte)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addComponent(ckbMaterial))
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addGap(28, 28, 28)
+                                                .addComponent(rbtTarde)
+                                                .addGap(0, 0, Short.MAX_VALUE)))))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cbxCategorias, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(btnRegistroP)
+                                .addGap(73, 73, 73)
+                                .addComponent(btnMostrarR)
+                                .addGap(64, 64, 64))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(209, 209, 209)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(138, 176, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(6, 6, 6)
+                .addComponent(lblRPE)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblNombre)
+                    .addComponent(txtNobre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cbxCategorias, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblCategorias))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ckbTransporte)
+                    .addComponent(ckbMaterial)
+                    .addComponent(ckbAlmuerzo))
+                .addGap(33, 33, 33)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(rbtTarde)
+                    .addComponent(rbtMañana))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnRegistroP)
+                    .addComponent(btnMostrarR))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 103, Short.MAX_VALUE)
+                .addContainerGap())
+>>>>>>> d6bcee0bb18186b9276dc98a19ebed7f1f230c59
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+<<<<<<< HEAD
     /**
      * @param args the command line arguments
      */
@@ -72,6 +228,32 @@ public class Interfas1 extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(Interfas1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+=======
+    private void txtNobreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNobreActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNobreActionPerformed
+
+    private void cbxCategoriasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbxCategoriasActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cbxCategoriasActionPerformed
+
+    private void ckbTransporteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ckbTransporteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ckbTransporteActionPerformed
+
+    private void ckbMaterialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ckbMaterialActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ckbMaterialActionPerformed
+
+    private void btnRegistroPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistroPActionPerformed
+
+
+
+
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRegistroPActionPerformed
+>>>>>>> d6bcee0bb18186b9276dc98a19ebed7f1f230c59
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -82,6 +264,25 @@ public class Interfas1 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+<<<<<<< HEAD
     private javax.swing.JLabel jLabel1;
+=======
+    private javax.swing.ButtonGroup btgServicio;
+    private javax.swing.ButtonGroup btgTurno;
+    private javax.swing.JButton btnMostrarR;
+    private javax.swing.JButton btnRegistroP;
+    private javax.swing.JComboBox<String> cbxCategorias;
+    private javax.swing.JCheckBox ckbAlmuerzo;
+    private javax.swing.JCheckBox ckbMaterial;
+    private javax.swing.JCheckBox ckbTransporte;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel lblCategorias;
+    private javax.swing.JLabel lblNombre;
+    private javax.swing.JLabel lblRPE;
+    private javax.swing.JRadioButton rbtMañana;
+    private javax.swing.JRadioButton rbtTarde;
+    private javax.swing.JTextArea txtArea;
+    private javax.swing.JTextField txtNobre;
+>>>>>>> d6bcee0bb18186b9276dc98a19ebed7f1f230c59
     // End of variables declaration//GEN-END:variables
 }
