@@ -13,7 +13,6 @@ public class Grupo2025 {
     public static void main(String[] args) {
         System.out.println("Hello World!");
         
-         Interfas1 objInterfas=new Interfas1();
-       objInterfas.setVisible(true);
+         
     }
 }
